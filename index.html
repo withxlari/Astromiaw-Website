@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Astromiaw</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <header>Astromiaw</header>
+
+  <nav>
+    <a href="#">Início</a>
+    <a href="#">Galáxias</a>
+    <a href="#">Gatíneos</a>
+    <a href="#">Contato</a>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <h2 class="typed-text"></h2>
+      <p>Onde o universo encontra a fofura felina 🐾🌌</p>
+      <button>Explorar</button>
+    </div>
+  </section>
+  
+  
+
+  <section class="cards">
+    <div class="card">
+      <i class="fas fa-meteor"></i>
+      <h3>Nebulosas</h3>
+      <p>Gatinhos vindos direto das nebulosas flamejantes.</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-cat"></i>
+      <h3>Galáxias</h3>
+      <p>O canto mais fofo e vermelho do universo.</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-rocket"></i>
+      <h3>Planetas</h3>
+      <p>Embarque numa viagem intergaláctica com os astrogatos.</p>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Astromiaw - Miados Cósmicos garantidos
+  </footer>
+
+  <script>
+    const typedText = document.querySelector('.typed-text');
+    const text = "Bem Vindo ao Astromiaw";
+    let index = 0;
+  
+    function type() {
+      if (index < text.length) {
+        typedText.textContent += text[index];
+        index++;
+        setTimeout(type, 100);
+      }
+    }
+  
+    type();
+  </script>
+</body>
+</html>
